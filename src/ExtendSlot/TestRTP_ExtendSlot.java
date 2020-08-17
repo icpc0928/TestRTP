@@ -12,6 +12,8 @@ import java.util.regex.Pattern;
 
 public class TestRTP_ExtendSlot {
 
+    //ExtendSlot: 323.324(327).325.326.328
+
     static int gameID = 328;
     static int testTimes = 1000;
     static int lineBet = 1;

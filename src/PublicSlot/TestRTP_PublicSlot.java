@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 public class TestRTP_PublicSlot {
 
+    //PublicSlot: 23.24.31.32.33.38.39.43.44.45.46.47.48.49.50.51.52.53.95.96
 
     static int gameID = 71;
     static int testTimes = 100000000;
