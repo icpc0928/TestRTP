@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="extensions_lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/BaseDB.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/Broadcast.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/Helper.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/Log.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/Notify.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/jni4net.j-0.8.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/jxl-2.6.12.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/log4j-1.2.15.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/org.json.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/PPMoneyDB.j4n.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/sfs2x-core.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/sfs2x.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/slf4j-api-1.7.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

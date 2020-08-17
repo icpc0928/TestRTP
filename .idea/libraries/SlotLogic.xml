@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SlotLogic">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/ExtendSlotLogic.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/TripleMonkeySlotLogic.jar!/" />
+      <root url="jar://$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/__lib__/VarySlotLogic.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
