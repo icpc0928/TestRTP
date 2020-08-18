@@ -9,7 +9,7 @@ public class TestRTP_TripleMonkeySlot {
 
 
     static int gameID = 163;
-    static int testTimes = 100;
+    static int testTimes = 10000000;
     static int lineBet = 1;
     static boolean isRateStatic = true;
 
@@ -19,8 +19,8 @@ public class TestRTP_TripleMonkeySlot {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args){
-        double rate = 96;
-        double prob = 96;
+        double rate = 88;
+        double prob = 88;
 
         long totalBet = slot.getTotalBet(lineBet);
         long totalWin;
@@ -56,6 +56,8 @@ public class TestRTP_TripleMonkeySlot {
         int[][] maxSpinWinGrid = null;	//單轉最高贏分圖示表(主遊戲||免費遊戲)
         int maxTotalWinTestTime = 0;
         int maxSpinWinTestTime = 0;
+
+        HashMap<String, Object> theMaxResp = null;
 
 
 
@@ -96,6 +98,7 @@ public class TestRTP_TripleMonkeySlot {
                         maxSpinWin = totalBaseWin;
                         maxSpinWinGrid = (int[][]) spin.get("Grid");
                         maxSpinWinTestTime = i;
+
                     }
                     maxSpinWin = Math.max(totalBaseWin, maxSpinWin);
 
@@ -139,6 +142,7 @@ public class TestRTP_TripleMonkeySlot {
                     spin = (HashMap<String, Object>) spins.get("0");
                     maxTotalWinGrid = (int[][]) spin.get("Grid");
                     maxTotalWinTestTime = i;
+                    theMaxResp = resp;
                 }
                 if((totalWin / totalBet) > 50) countWin50Up++;
                 else if((totalWin / totalBet > 30)) countWin30To50++;
@@ -164,7 +168,7 @@ public class TestRTP_TripleMonkeySlot {
         showAward(totalSpin, countWin10To30, countWin30To50, countWin50Up);
         showMaxWin(totalBet, maxTotalWin, maxSpinWin, maxTotalWinGrid, maxSpinWinGrid, maxTotalWinTestTime, maxSpinWinTestTime);
         showStandardDeviation(earnList, totalBet);
-
+        showTestSpin(theMaxResp, maxTotalWinTestTime);
     }
 
     public static void showGameInfo(int gameID, int testTimes){
@@ -305,6 +309,11 @@ public class TestRTP_TripleMonkeySlot {
         printGrid(maxSpinWinGrid);
         System.out.println();
 
+    }
+
+    public static void showTestSpin(HashMap<String, Object> theMaxResp, int t){
+        System.out.println("*******列印單局最高贏分明細*******");
+        TestSpin_TripleMonkeySlot.printHashMap(theMaxResp, t);
     }
 
     private static int returnEarnTimes(double[] earnList){
